@@ -37,7 +37,7 @@ These notes are only for this Julia Todorova site. Do not treat them as general 
   - do not add generated-image process text such as "created for the article" on the page.
 - Bottom author box copy currently approved:
   - `Джулия Тодорова`
-  - `Клиничен психолог и психотерапевт. Работи с възрастни, деца и родители, срещащи трудности в грижата за децата си.`
+  - `Клиничен психолог и психотерапевт. Работи с възрастни, юноши и родители, които срещат трудности в грижата за децата си.`
 - Bottom author image should use `assets/julia-todorova-razkazhimi.jpg` with a crop that does not cut off her head.
 - For article images, place each image near the matching source/argument in the article flow, and include visible caption/source links.
 - For the current Picasso/Cubism article:
