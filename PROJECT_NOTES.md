@@ -62,7 +62,7 @@ Use these as source material and secondary trust links:
 - Address: бул. „Витоша“ 61, София
 - Phone: `0878 194 843` / `+359 878 194 843`
 - Email from RazkazhiMi: `todorova.djulia@gmail.com`
-- Price to show: **€40** / 78.23 лв. Do **not** use 52.50 лв.
+- Price to show: **€45** / 88.01 лв. Do **not** use older prices.
 - Hours: **09:00–20:00**, with last session starting at **19:00**.
 - Sessions: live / in-person sessions should be emphasized. Sofia cabinet first.
 - Audience: adults, parents, and teenagers/youth.

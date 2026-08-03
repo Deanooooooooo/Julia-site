@@ -73,13 +73,13 @@ a { color: inherit; }
 .brand-mark {
   width: 44px;
   height: 44px;
-  display: grid;
-  place-items: center;
+  display: block;
+  flex: 0 0 auto;
   border-radius: 50%;
-  background: var(--sage-dark);
-  color: var(--cream-2);
-  font-weight: 800;
-  letter-spacing: .04em;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(91, 101, 80, .22);
+  background: var(--cream-2);
 }
 
 .brand strong,
