@@ -1,0 +1,37 @@
+{%- set tel = texts.contacts.phone | tel -%}
+{%- set p = "#" if isHome else "/#" -%}
+    <header class="site-header" aria-label="Основна навигация">
+      <a class="brand" href="{{ '#top' if isHome else '/' }}" aria-label="Начало">
+        <img class="brand-mark" src="/assets/favicon-512.png" alt="" width="44" height="44" />
+        <span>
+          <strong>Джулия Тодорова</strong>
+          <small>Психолог · Психотерапевт</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Навигация">
+        <a href="{{ p }}za-men">За мен</a>
+        <a href="{{ p }}pomosht">Помощ</a>
+        <a href="{{ p }}podhod">Подход</a>
+        <a href="/blog/"{% if not isHome %} aria-current="page"{% endif %}>Блог</a>
+        <a href="{{ p }}kontakti">Контакти</a>
+      </nav>
+
+      <a class="btn btn-small" href="tel:{{ tel }}">Запитване за консултация</a>
+
+      <details class="mobile-menu">
+        <summary aria-label="Отваряне на менюто">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <nav class="mobile-menu-panel" aria-label="Мобилна навигация">
+          <a href="{{ p }}za-men">За мен</a>
+          <a href="{{ p }}pomosht">Помощ</a>
+          <a href="{{ p }}podhod">Подход</a>
+          <a href="/blog/"{% if not isHome %} aria-current="page"{% endif %}>Блог</a>
+          <a href="{{ p }}kontakti">Контакти</a>
+          <a class="mobile-menu-cta" href="tel:{{ tel }}">Запитване за консултация</a>
+        </nav>
+      </details>
+    </header>

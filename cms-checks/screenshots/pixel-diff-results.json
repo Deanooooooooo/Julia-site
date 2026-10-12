@@ -1,0 +1,72 @@
+[
+  {
+    "page": "home",
+    "size": "desktop",
+    "old": "1440x6700",
+    "new": "1440x6700",
+    "diffPixels": 0
+  },
+  {
+    "page": "home",
+    "size": "mobile390",
+    "old": "412x8985",
+    "new": "412x8985",
+    "diffPixels": 0
+  },
+  {
+    "page": "blog",
+    "size": "desktop",
+    "old": "1440x1781",
+    "new": "1440x1781",
+    "diffPixels": 0
+  },
+  {
+    "page": "blog",
+    "size": "mobile390",
+    "old": "390x2824",
+    "new": "390x2824",
+    "diffPixels": 0
+  },
+  {
+    "page": "article-picasso",
+    "size": "desktop",
+    "old": "1440x10222",
+    "new": "1440x10222",
+    "diffPixels": 47
+  },
+  {
+    "page": "article-picasso",
+    "size": "mobile390",
+    "old": "390x14187",
+    "new": "390x14187",
+    "diffPixels": 46
+  },
+  {
+    "page": "article-samota",
+    "size": "desktop",
+    "old": "1440x6770",
+    "new": "1440x6770",
+    "diffPixels": 0
+  },
+  {
+    "page": "article-samota",
+    "size": "mobile390",
+    "old": "390x8302",
+    "new": "390x8302",
+    "diffPixels": 0
+  },
+  {
+    "page": "article-butilirame",
+    "size": "desktop",
+    "old": "1440x7286",
+    "new": "1440x7286",
+    "diffPixels": 0
+  },
+  {
+    "page": "article-butilirame",
+    "size": "mobile390",
+    "old": "390x9522",
+    "new": "390x9522",
+    "diffPixels": 0
+  }
+]

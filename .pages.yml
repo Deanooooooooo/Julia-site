@@ -1,0 +1,167 @@
+# Pages CMS (https://app.pagescms.org): what Джулия can edit. Everything else (layout, styles, code) stays locked.
+settings:
+  content:
+    # Keep fields that are not shown in the form (SEO overrides, list order) when an article is saved.
+    merge: true
+
+media:
+  - name: uploads
+    label: Снимки
+    input: assets/uploads
+    output: /assets/uploads
+    categories: [image]
+    rename: safe
+
+content:
+  - name: articles
+    label: Статии
+    description: Статиите в блога. Новата статия излиза в сайта около минута след „Save“.
+    type: collection
+    path: src/articles
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    exclude: [articles.11tydata.js]
+    view:
+      primary: title
+      fields: [title, date, draft]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Заглавие
+        type: string
+        required: true
+      - name: eyebrow
+        label: Рубрика
+        description: Малкият надпис над заглавието, например „Самота и принадлежност“. Може да остане празно.
+        type: string
+      - name: summary
+        label: Кратко описание
+        description: 1–2 изречения. Показва се в списъка със статии и когато статията се сподели във Facebook или LinkedIn.
+        type: text
+        required: true
+      - name: linkedin_date
+        label: Дата в LinkedIn
+        description: Само ако статията първо е публикувана в LinkedIn. Иначе оставете празно.
+        type: date
+        default: ""
+        options:
+          format: yyyy-MM-dd
+      - name: date
+        label: Дата в сайта
+        description: Днешна дата за нова статия. Статиите се подреждат по тази дата, най-новата е първа.
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: image
+        label: Главна снимка
+        description: Снимката най-горе в статията и в списъка. Хоризонтална снимка изглежда най-добре.
+        type: image
+        required: true
+        options:
+          media: uploads
+          path: assets/uploads
+      - name: image_alt
+        label: Какво има на снимката
+        description: Кратко описание на снимката с думи (за незрящи читатели и за Google). Не се вижда в сайта.
+        type: string
+        required: true
+      - name: image_caption
+        label: Текст на снимката
+        description: Показва се под главната снимка, например автор и година. Може да остане празно.
+        type: string
+      - name: body
+        label: Текст
+        description: "Подзаглавия: бутон „H2“. Снимка в текста: вмъкнете я на отделен ред; ако веднага под нея има ред в курсив, той става текст под снимката. Подзаглавие „Източници“ с номериран списък под него оформя източниците."
+        type: rich-text
+        options:
+          format: markdown
+          switcher: false
+          media: uploads
+          path: assets/uploads
+      - name: draft
+        label: Чернова (не се показва в сайта)
+        type: boolean
+        default: false
+      # Kept for existing articles; not shown in the form.
+      - { name: seo_title, type: string, hidden: true }
+      - { name: seo_description, type: string, hidden: true }
+      - { name: social_description, type: string, hidden: true }
+      - { name: breadcrumb, type: string, hidden: true }
+      - { name: modified, type: string, hidden: true }
+      - { name: order, type: number, hidden: true, default: 0 }
+
+  - name: texts
+    label: Текстове на сайта
+    description: Текстовете на началната страница. Подредбата и дизайнът не се променят оттук.
+    type: file
+    path: src/_data/texts.yaml
+    format: yaml
+    fields:
+      - name: hero
+        label: Начало (най-горе)
+        type: object
+        fields:
+          - { name: title, label: Голямо заглавие, type: string, required: true }
+          - { name: paragraphs, label: Абзаци под заглавието, type: text, list: true }
+          - { name: points, label: Кратки акценти под снимката, type: string, list: true }
+      - name: about
+        label: Квалификация и опит
+        type: object
+        fields:
+          - { name: title, label: Заглавие, type: string, required: true }
+          - { name: text, label: Текст за образованието, type: text }
+          - { name: experience_title, label: Заглавие над списъка с опит, type: string }
+          - name: experience
+            label: Опит (списък)
+            description: "Връзка се пише така: [текст](https://адрес)"
+            type: string
+            list: true
+          - { name: memberships_title, label: Заглавие над членствата, type: string }
+          - name: memberships
+            label: Специализации и членства (списък)
+            description: "Връзка се пише така: [текст](https://адрес)"
+            type: string
+            list: true
+      - name: help
+        label: С какво мога да помогна
+        type: object
+        fields:
+          - { name: title, label: Заглавие, type: string, required: true }
+          - { name: text, label: Текст, type: text }
+          - { name: topics, label: Теми, type: string, list: true }
+      - name: approach
+        label: Подход
+        type: object
+        fields:
+          - { name: title, label: Заглавие, type: string, required: true }
+          - { name: quote, label: Цитат, type: text }
+          - { name: paragraphs, label: Абзаци, type: text, list: true }
+      - name: testimonials
+        label: Отзиви
+        type: object
+        fields:
+          - { name: title, label: Заглавие, type: string, required: true }
+          - name: items
+            label: Отзиви
+            type: object
+            list: true
+            fields:
+              - { name: text, label: Текст на отзива, type: text }
+              - { name: name, label: Име, type: string }
+      - name: contacts
+        label: Контакти и цени
+        description: Телефонът, имейлът, адресът, работното време и таксата се сменят навсякъде в сайта (бутоните за обаждане също).
+        type: object
+        fields:
+          - { name: eyebrow, label: Малък надпис над заглавието, type: string }
+          - { name: title, label: Заглавие, type: string, required: true }
+          - { name: text, label: Текст, type: text }
+          - { name: phone, label: Телефон, description: "Във вида 0878 194 843", type: string, required: true }
+          - { name: email, label: Имейл, type: string, required: true }
+          - { name: address, label: Адрес, description: "Без града, например бул. „Витоша“ 61", type: string, required: true }
+          - { name: hours, label: Работно време, description: "Във вида 09:00–20:00", type: string, required: true }
+          - { name: price, label: Такса за консултация, description: "Например €45", type: string, required: true }

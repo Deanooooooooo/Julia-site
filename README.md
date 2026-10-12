@@ -1,19 +1,31 @@
-# Джулия Тодорова — локален сайт
+# Джулия Тодорова — сайт
 
-Static Bulgarian landing page for localhost review.
+Bulgarian site for a psychologist in Sofia. Built with Eleventy; content is edited in Pages CMS.
 
 ## Run locally
 
 ```bash
-cd julia-todorova-site
-python3 -m http.server 5173
+npm install
+npm run serve
 ```
 
 Open: http://localhost:5173
 
+## Build
+
+- Command: `npm run build`
+- Output: `_site/`
+- Works the same on Vercel (`vercel.json`) and Cloudflare Pages (`cloudflare/_redirects`, `cloudflare/_headers`).
+
+## Where things are
+
+- Articles: `src/articles/*.md` (file name = URL under `/blog/`)
+- Homepage texts and contacts: `src/_data/texts.yaml`
+- Templates: `src/index.njk`, `src/blog/index.njk`, `src/_includes/`
+- Images: `assets/uploads/`
+- CMS fields: `.pages.yml`
+
 ## Deployment
 
 - Live URL: https://www.juliatodorova.bg/
-- Canonical URL, sitemap, robots, Open Graph, Twitter preview tags, and JSON-LD schema point to the live `www` domain because the apex domain redirects there.
-- If the primary domain changes later, update `index.html`, `robots.txt`, `sitemap.xml`, and schema URLs to the final 200 URL.
-- Confirm final working days/hours and whether weekend appointments should be shown.
+- Canonical URL, sitemap, robots, Open Graph and JSON-LD use the live `www` domain (`src/_data/site.js`).

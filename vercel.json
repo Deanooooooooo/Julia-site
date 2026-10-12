@@ -1,6 +1,13 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    { "source": "/admin", "destination": "https://app.pagescms.org", "permanent": false },
+    { "source": "/admin/", "destination": "https://app.pagescms.org", "permanent": false },
+    { "source": "/assets/blog/:file", "destination": "/assets/uploads/:file", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

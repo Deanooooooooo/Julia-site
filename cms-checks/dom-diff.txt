@@ -1,0 +1,13 @@
+== index.html: 303 vs 303 nodes, 0 diff lines
+== blog/index.html: 163 vs 163 nodes, 2 diff lines
+-           <a aria-label="Психоанализа и изкуство: психичен апарат, кубизъм и картината Герника" class="article-card-image" href="/blog/psihoanaliza-izkustvo-psihichen-aparat-kubizam-gernika/">
++           <a aria-label="Психоанализа и изкуство: психичен апарат, кубизъм и картината „Герника“" class="article-card-image" href="/blog/psihoanaliza-izkustvo-psihichen-aparat-kubizam-gernika/">
+== blog/samota-i-lipsa-na-novi-priyatelstva/index.html: 223 vs 223 nodes, 0 diff lines
+== blog/kakvo-se-sluchva-kogato-butilirame-emociite-si/index.html: 222 vs 222 nodes, 0 diff lines
+== blog/psihoanaliza-izkustvo-psihichen-aparat-kubizam-gernika/index.html: 288 vs 285 nodes, 5 diff lines
+-               "Жорж Брак,"
++               "Жорж Брак, Fruit Dish, 1913."
+-               <span lang="en">
+-                 "Fruit Dish"
+-               ", 1913."
+sitemap.xml byte-identical

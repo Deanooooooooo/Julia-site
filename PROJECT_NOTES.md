@@ -6,10 +6,12 @@ Use this file as the quick handoff for future chat sessions. It intentionally ke
 - Local project: `/Users/User/.openclaw/workspace/julia-todorova-site`
 - Type: Bulgarian one-page business-card / landing page for a psychologist in Sofia.
 - Deployment: GitHub `deano/main` (`Deanooooooooo/Julia-site`) is connected to the live Vercel site. `origin/main` (`MDDechevs/Julia-site`) updates GitHub Pages. For live `www.juliatodorova.bg`, push `deano/main` after final approval.
+- Since 2026-10-12 (branch `cms/pages-cms`): the site is built with Eleventy. Articles are Markdown in `src/articles/`, homepage texts in `src/_data/texts.yaml`, templates in `src/`. Джулия edits through Pages CMS (`.pages.yml`). Do not hand-edit generated HTML; edit the Markdown/templates. Details: `OWNERSHIP-PLAN.md`.
 - Local preview:
   ```bash
   cd /Users/User/.openclaw/workspace/julia-todorova-site
-  python3 -m http.server 5173
+  npm install   # once
+  npm run serve
   ```
   Open: `http://localhost:5173`
 
@@ -73,6 +75,7 @@ Use these as source material and secondary trust links:
 
 ## Image References
 Current project assets:
+- Article images live in `assets/uploads/` (moved from `assets/blog/`, old URLs redirect).
 - `assets/julia-todorova-portrait.jpg` — uploaded portrait; preferred/strong hero portrait.
 - `assets/julia-todorova-razkazhimi.jpg` — RazkazhiMi portrait; secondary/about image.
 - `assets/psychology-cabinet-sofia.jpg` — cabinet image; must remain horizontal/natural, not forced into a vertical crop.

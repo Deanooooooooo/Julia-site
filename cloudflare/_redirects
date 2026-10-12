@@ -1,0 +1,3 @@
+/admin https://app.pagescms.org 302
+/admin/ https://app.pagescms.org 302
+/assets/blog/* /assets/uploads/:splat 301
