@@ -10,7 +10,7 @@ summary: "Често, като родители, се чуваме да каже
   много емоции, сплетени в кълбо: недоволни родители, недоволни деца и
   двупосочно чувство на безпомощност. Как да разплетем това кълбо? Откъде да
   започнем?"
-linkedin_date: 2025-03-05
+linkedin_date: 2025-03-04
 date: 2026-10-20
 image: /assets/uploads/deca-roditeli-emocii.jpg
 image_alt: родители, оказващи емоционална подкрепа на детето си
@@ -75,7 +75,7 @@ order: 0
 ## **Източници:**
 
 1. **[Chipur - Helping children express emotions in healthy ways](https://chipur.com/helping-children-express-emotions-in-healthy-ways/)**
-2. **[Chipur - Helping children express emotions in healthy ways I 2](https://chipur.com/helping-children-express-emotions-in-healthy-ways-2/)**
+2. **[Chipur - Helping children express emotions in healthy ways | 2](https://chipur.com/helping-children-express-emotions-in-healthy-ways-2/)**
 3. **[Tinybeans - How to Help Kids Express Their Feelings At Every Age](https://tinybeans.com/how-to-get-kids-to-express-feelings/)**
 4. **[RaisingChildren - Understanding and managing emotions: children and teenagers](https://raisingchildren.net.au/preschoolers/development/preschoolers-social-emotional-development/understanding-managing-emotions-children-teenagers)**
 
