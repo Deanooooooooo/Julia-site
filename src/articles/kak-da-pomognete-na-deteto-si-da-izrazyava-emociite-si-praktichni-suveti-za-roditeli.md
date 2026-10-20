@@ -74,8 +74,8 @@ order: 0
 
 ## **Източници:**
 
-1. **[https://chipur.com/helping-children-express-emotions-in-healthy-ways/](https://chipur.com/helping-children-express-emotions-in-healthy-ways/)**
-2. **[https://chipur.com/helping-children-express-emotions-in-healthy-ways-2/](https://chipur.com/helping-children-express-emotions-in-healthy-ways-2/)**
-3. **[https://tinybeans.com/how-to-get-kids-to-express-feelings/](https://tinybeans.com/how-to-get-kids-to-express-feelings/)**
-4. **[https://raisingchildren.net.au/preschoolers/development/preschoolers-social-emotional-development/understanding-managing-emotions-children-teenagers](https://raisingchildren.net.au/preschoolers/development/preschoolers-social-emotional-development/understanding-managing-emotions-children-teenagers)**
+1. **[Chipur - Helping children express emotions in healthy ways](https://chipur.com/helping-children-express-emotions-in-healthy-ways/)**
+2. **[Chipur - Helping children express emotions in healthy ways I 2](https://chipur.com/helping-children-express-emotions-in-healthy-ways-2/)**
+3. **[Tinybeans - How to Help Kids Express Their Feelings At Every Age](https://tinybeans.com/how-to-get-kids-to-express-feelings/)**
+4. **[RaisingChildren - Understanding and managing emotions: children and teenagers](https://raisingchildren.net.au/preschoolers/development/preschoolers-social-emotional-development/understanding-managing-emotions-children-teenagers)**
 
